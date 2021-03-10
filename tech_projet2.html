@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet_tech_css.css">
+    <link rel="stylesheet" href="tech_pojet_qcm.css">
+    <title>Physique</title>
+</head>
+<body>
+    <div class="top" >  
+        <li style=" margin-left: 32%;margin-right: 50px;"><a href="index.html" class="cl-link">Accueil</a></li>
+        <li style="margin-right: 50px;"><a href="tech_projet_exercice.html" class="cl-link">Exercices</a></li>
+        <li><a href="Concat Us" class="cl-link" >Contact us</a></li>
+    </div><br>
+    <div id="chro" style="margin-top: 100px;" >
+        <p>Chrono :<input type="button" id="i0" class="butt" value='00 mn 00 s' onClick="T=setInterval(change,1000); "></p>
+    </div>
+    <form id="Phys" class="formm">
+        <label>1- Comment s'appelle la table de laboratoire sur laquelle le chimiste fait ses expériences ?</label><br><br>
+        <div class="di111"><input type="radio" id="P1_1" name="Q1">Le comptoir</div><br>
+        <div class="di111"><input type="radio" id="P1_2" name="Q1">L'établi</div><br>
+        <div class="di111"><input type="radio" id="P1_3" name="Q1">La paillasse<span class="in"> &#10004;</span></div><br><!--vari-->
+        <label>2- Quel est le troisième état de la matière (les deux premiers étant : solide, liquide) ?</label><br><br>
+        <div class="di111"><input type="radio" id="P2_1" name="Q2">Air</div><br>
+        <div class="di111"><input type="radio" id="P2_2" name="Q2">Émulsion</div><br>
+        <div class="di111"><input type="radio" id="P2_3" name="Q2">Gaz<span class="in"> &#10004;</span></div><br><!--vari-->
+        <label>3- À quelle température, l'eau se change-t-elle en gaz ?</label><br><br>
+        <div class="di111"><input type="radio" id="P3_1" name="Q3"> 90°C</div><br>
+        <div class="di111"><input type="radio" id="P3_2" name="Q3"> 100°C<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="radio" id="P3_3" name="Q3"> 1000°C</div><br>
+        <label>4- Quels sont les principaux éléments nécessaires à la vie ?</label><br><br>
+        <div class="di111"><input type="radio" id="P4_1" name="Q4">Arsenic, azote hydrogène, oxygène.</div><br>
+        <div class="di111"><input type="radio" id="P4_2" name="Q4">Carbone, azote, hydrogène, oxygène, phosphore, soufre.<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="radio" id="P4_3" name="Q4">Hydrogène, oxygène, phosphore, potassium, soufre.</div><br>
+        <label>5- Comment s'appelle l'unité d'énergie ?</label><br><br>
+        <div class="di111"><input type="radio" id="P5_1" name="Q5">La calorie</div><br>
+        <div class="di111"><input type="radio" id="P5_2" name="Q5">Le dalton</div><br>
+        <div class="di111"><input type="radio" id="P5_3" name="Q5">Le joule<span class="in"> &#10004;</span></div><br><!--vari-->
+        <label>6- Qu'est-ce qu'un neutrino ?</label><br><br>
+        <div class="di111"><input type="radio" id="P6_1" name="Q6">Un atome neutre</div><br>
+        <div class="di111"><input type="radio" id="P6_2" name="Q6">Un électron libre</div><br>
+        <div class="di111"><input type="radio" id="P6_3" name="Q6">Une particule élémentaire<span class="in"> &#10004;</span></div><br><!--vari-->
+        <label>7- Par quelle théorie, Einstein révolutionna-t-il la physique ?</label><br><br>
+        <div class="di111"><input type="radio" id="P7_1" name="Q7">De l'espace-temps</div><br>
+        <div class="di111"><input type="radio" id="P7_2" name="Q7">De l'évolution</div><br>
+        <div class="di111"><input type="radio" id="P7_3" name="Q7">De la relativité<span class="in"> &#10004;</span></div><br><!--vari-->
+        <label>8- En 1887, Hertz démontrait l'existence des ondes radioélectriques appelées depuis "ondes hertziennes". On en fait divers usages. Quel intrus s'est glissé dans la liste ?</label><br><br>
+        <div class="di111"><input type="radio" id="P8_1" name="Q8">Transmission téléphonique</div><br>
+        <div class="di111"><input type="radio" id="P8_2" name="Q8">Transport spatial<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="radio" id="P8_3" name="Q8">Wi-Fi</div><br>
+        <label>9- Quel grand physicien, prix Nobel, découvrit la radioactivité ?</label><br><br>
+        <div class="di111"><input type="radio" id="P9_1" name="Q9">Henri Becquerel</div><br>
+        <div class="di111"><input type="radio" id="P9_2" name="Q9">John Dalton<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="radio" id="P9_3" name="Q9">Frédéric Joliot-Curie</div><br>
+        <label>10- Automobilistes trop rapides, une question pour vous : Qu'utilisent les radars pour détecter une distance ou un objet et sa vitesse ?</label><br><br>
+        <div class="di111"><input type="radio" id="P10_1" name="Q10">Une antenne bipolaire miniaturisée</div><br>
+        <div class="di111"><input type="radio" id="P10_2" name="Q10">Les fréquences radio</div><br>
+        <div class="di111"><input type="radio" id="P10_3" name="Q10">Les ondes électromagnétiques<span class="in"> &#10004;</span></div><br><br><!--vari-->
+
+    </form>
+    <div style="text-align: center;margin-bottom: 20px;">
+        <input class="butt" type="button" id="resu" value="Corriger" onclick="resulP()">
+        <input class="butt" type="button" value="SHOW" id="sho" onclick="showAns()">
+        <input class="butt" type="button" onclick="show()" value="Correction">
+    </div>
+    <form id="form2" style="display: none;">
+        <p>Votre resultat est :</p>
+        <p id="demo"></p>
+        <p id="ppp">Vous avez fait le QCM dans</p>
+    </form>
+    <a href="index.html" style="text-decoration: none;"><input type="button" value="Retour Au Menu" id="retour" class="butt" style="display: none;"></a>
+    <script>
+        function resulP(){
+            document.getElementById('form2').style.display="block";
+            document.getElementById('resu').style.display="none";
+            document.getElementById('retour').style.display="block";
+            var s=0;
+            if(document.getElementById('P1_3').checked==true){s+=1};
+            if(document.getElementById('P2_3').checked==true){s+=1};
+            if(document.getElementById('P3_2').checked==true){s+=1};
+            if(document.getElementById('P4_2').checked==true){s+=1};
+            if(document.getElementById('P5_3').checked==true){s+=1};
+            if(document.getElementById('P6_3').checked==true){s+=1};
+            if(document.getElementById('P7_2').checked==true){s+=1};
+            if(document.getElementById('P8_2').checked==true){s+=1};
+            if(document.getElementById('P9_2').checked==true){s+=1};
+            if(document.getElementById('P10_3').checked==true){s+=1};
+            document.getElementById('demo').innerHTML=s+"/10";
+            document.getElementById('ppp').innerHTML+= ' ' +document.getElementById('i0').value ;
+        }
+        function showAns(){
+            document.getElementById('sho').style.display="none";
+        }
+        function show(){
+            var x=document.querySelectorAll(".in");
+            for(i=0;i<x.length;i++){
+                x[i].style.display="inline-block";
+            }
+        }
+        var s=0;m=0;
+        function change(){
+            document.getElementById('i0').value=m+' mn '+' '+s+' s ';
+            s++; if(s==60) {s=0;m+=1}
+        }
+    </script>
+    
+</body>
+</html>

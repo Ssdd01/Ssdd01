@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D5</title>
+    <link rel="stylesheet" href="projet_tech_css.css">
+    <link rel="stylesheet" href="tech_pojet_qcm.css">
+</head>
+<body>
+    <div class="top" >  
+        <li style=" margin-left: 32%;margin-right: 50px;"><a href="index.html" class="cl-link">Accueil</a></li>
+        <li style="margin-right: 50px;"><a href="tech_projet_exercice.html" class="cl-link">Exercices</a></li>
+        <li><a href="Concat Us" class="cl-link" >Contact us</a></li>
+    </div><br>
+    <div id="chro" style="margin-top: 100px;" >
+        <p>Chrono :<input type="button" id="i0" class="butt" value='00 mn 00 s' onClick="T=setInterval(change,1000); "></p>
+    </div>
+    <form class="formm">
+        <label>1- Il fait nuit dehors, je suis dans une pièce éclairée et je me vois à travers une vitre donnant vers l'extérieur. En effet,</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op1_1" > Le noir nocturne réfléchit la lumière</div><br>
+        <div class="di111"><input type="checkbox" id="Op1_2" > La vitre réfléchit une partie de la lumière<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="checkbox" id="Op1_3" > La vitre n'est plus transparente la nuit</div><br>
+        <div class="di111"><input type="checkbox" id="Op1_4" > La vitre ne laisse pas passer la lumière extérieure quand il fait nuit</div><br>
+        <label>2- La lumière se propage dans le vide....</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op2_1" > Comme le son</div><br>
+        <div class="di111"><input type="checkbox" id="Op2_2" > Avec une vitesse plus faible que si elle se propageait dans l'air</div><br>
+        <div class="di111"><input type="checkbox" id="Op2_3" > La lumière n'a pas besoin de support matériel pour se propager<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="checkbox" id="Op2_4" > A la vitesse de 300000 m/s</div><br>
+        <label>3- Un miroir sphérique donne d'un objet réel, une image droite deux fois plus grande.</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op3_1" >  Le miroir est obligatoirement convergent<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="checkbox" id="Op3_2" >  Le miroir est obligatoirement divergent</div><br>
+        <div class="di111"><input type="checkbox" id="Op3_3" > Le miroir peut être convergent ou divergent </div><br>
+        <div class="di111"><input type="checkbox" id="Op3_4" >  Ce n'est pas possible</div><br>
+        <label>4- Une lentille convergente est retournée (la face d'entrée devient face de sortie).</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op4_1" > Elle reste convergente<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="checkbox" id="Op4_2" > Elle devient divergente</div><br>
+        <div class="di111"><input type="checkbox" id="Op4_3" > Elle devient afocale</div><br>
+        <div class="di111"><input type="checkbox" id="Op4_4" > On ne peut répondre</div><br>
+        <label>5- On cherche à faire l'image d'un objet réel sur un écran situé à la distance d, à l'aide d'une lentille mince de vergence V.</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op5_1"> Il y a une solution</div><br>
+        <div class="di111"><input type="checkbox" id="Op5_2"> Il y a deux solutions</div><br>
+        <div class="di111"><input type="checkbox" id="Op5_3"> Il y a une infinité de solutions</div><br>
+        <div class="di111"><input type="checkbox" id="Op5_4"> Il n y a pas toujours de solution<span class="in"> &#10004;</span></div><br><!--vari-->
+        <label>6- L'apparition d'un arc en ciel est liée au phénomène de :</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op6_1" > Dispersion de la lumière<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="checkbox" id="Op6_2" > Diffraction de la lumière par les petites gouttes d'eau en suspension dans l'air</div><br>
+        <div class="di111"><input type="checkbox" id="Op6_3" > Diffusion de la lumière par les petites gouttes d'eau en suspension dans l'air</div><br>
+        <div class="di111"><input type="checkbox" id="Op6_4" > Émission des spectres atomiques de l'oxygène et de l'hydrogène</div><br>
+        <label>7- On forme une image à l'aide d'une lentille convergente de focale f'. On mesure un grandissement g=-1.</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op7_1"> La distance objet-image est alors égale à f'/2</div><br>
+        <div class="di111"><input type="checkbox" id="Op7_2"> La distance objet-image est alors égale à f'</div><br>
+        <div class="di111"><input type="checkbox" id="Op7_3"> La distance objet-image est alors égale à 2f'</div><br>
+        <div class="di111"><input type="checkbox" id="Op7_4"> La distance objet-image est alors égale à 4f'<span class="in"> &#10004;</span></div><br><!--vari-->
+        <label>8- Si un rayon lumineux pénètre dans un milieu moins réfringent avec un angle d'incidence i, on peut dire que :</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op8_1" > Le rayon réfracté n'existe plus si l'angle i dépasse une valeur limite<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="checkbox" id="Op8_2" > Le rayon réfracté existe toujours, variant de 0° à 90°.</div><br>
+        <div class="di111"><input type="checkbox" id="Op8_3" > Le rayon réfléchi existe toujours</div><br>
+        <div class="di111"><input type="checkbox" id="Op8_4" > Le rayon réfracté existe toujours mais atteint une valeur limite</div><br>
+        <label>9- La première détermination de la vitesse de la lumière date du</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op9_1"> XIXème siècle</div><br>
+        <div class="di111"><input type="checkbox" id="Op9_2"> XXème siècle</div><br>
+        <div class="di111"><input type="checkbox" id="Op9_3"> XVIIème siècle<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="checkbox" id="Op9_4"> Vème siècle</div><br>
+        <label>10- Pourquoi la Lune paraît-elle plus grosse quand elle se lève que lorsqu'elle est très haut dans le ciel ?</label><br><br>
+        <div class="di111"><input type="checkbox" id="Op10_1"> C'est une illusion d'optique<span class="in"> &#10004;</span></div><br><!--vari-->
+        <div class="di111"><input type="checkbox" id="Op10_2"> Parce qu'elle est plus proche de la Terre</div><br>
+        <div class="di111"><input type="checkbox" id="Op10_3"> La Lune se dilate tous les matins</div><br>
+        <div class="di111"><input type="checkbox" id="Op10_4"> C'est dû à la réfraction atmosphérique</div><br><br>
+    </form>
+    <div style="text-align: center;margin-bottom: 20px;" >
+        <input class="butt" type="button" id="resu" value="Corriger" onclick="resulO()">
+        <input class="butt" type="button" value="SHOW" id="sho" onclick="showAns()">
+        <input class="butt" type="button" onclick="show()" value="Correction">
+    </div>
+    <form id="form2" style="display: none;">
+        <p>Votre resultat est :</p>
+        <p id="demo"></p>
+        <p id="ppp">Vous avez fait le QCM dans</p>
+    </form>
+
+    <a href="index.html" style="text-decoration: none;" ><input type="button" value="Retour Au Menu" id="retour" class="butt" style="display: none;"></a>
+    <script>
+        function resulO(){
+            document.getElementById('form2').style.display="block";
+            document.getElementById('resu').style.display="none";
+            document.getElementById('retour').style.display="block";
+            var s=0;
+            if(document.getElementById('Op1_2').checked==true){s+=1};
+            if(document.getElementById('Op2_3').checked==true){s+=1};
+            if(document.getElementById('Op3_1').checked==true){s+=1};
+            if(document.getElementById('Op4_1').checked==true){s+=1};
+            if(document.getElementById('Op5_4').checked==true){s+=1};
+            if(document.getElementById('Op6_1').checked==true && document.getElementById('Op6_3').checked==true){s+=1};
+            if(document.getElementById('Op7_4').checked==true){s+=1};
+            if(document.getElementById('Op8_1').checked==true && document.getElementById('Op8_3').checked==true){s+=1};
+            if(document.getElementById('Op9_3').checked==true){s+=1};
+            if(document.getElementById('Op10_1').checked==true){s+=1};
+            document.getElementById('demo').innerHTML=s+"/10";
+            document.getElementById('ppp').innerHTML+= ' ' +document.getElementById('i0').value ;
+        }
+        function showAns(){
+            document.getElementById('sho').style.display="none";
+        }
+        function show(){
+            var x=document.querySelectorAll(".in");
+            for(i=0;i<x.length;i++){
+                x[i].style.display="inline-block";
+            }
+        }
+        var s=0;m=0;
+        function change(){
+            document.getElementById('i0').value=m+' mn '+' '+s+' s ';
+            s++; if(s==60) {s=0;m+=1}
+        }
+    </script>
+    
+</body>
+</html>

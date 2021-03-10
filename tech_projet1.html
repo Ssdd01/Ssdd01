@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathématique</title>
+    <link rel="stylesheet" href="projet_tech_css.css">
+    <link rel="stylesheet" href="tech_pojet_qcm.css">
+</head>
+<body>
+    <div class="top" >  
+        <li style=" margin-left: 32%;margin-right: 50px;"><a href="index.html" class="cl-link">Accueil</a></li>
+        <li style="margin-right: 50px;"><a href="tech_projet_exercice.html" class="cl-link">Exercices</a></li>
+        <li><a href="Concat Us" class="cl-link" >Contact us</a></li>
+    </div><br>
+    <div id="chro" style="margin-top: 100px;" >
+        <p>Chrono :<input type="button" id="i0" class="butt" value='00 mn 00 s' onClick="T=setInterval(change,1000); "></p>
+    </div>
+    <form id="Maths" class="formm">
+        <label>Quiz Culture générale</label>
+        <label>1- Le produit est le résultat : </label><br><br>
+        <div class="di111"><input type="checkbox" id="1_1">d'une addition</div><br>
+        <div class="di111"><input type="checkbox" id="1_2">d'une division</div><br>
+        <div class="di111"><input type="checkbox" id="1_3">d'une multiplication<span class="in"> &#10004;</span></div><br><!--vrai-->
+   
+        <label>2- Une personne place 1500 € sur un plan d'épargne rémunéré à 6 % l'an. Quel sera l'intérêt acquis au bout de 2 quadrimestres de placement ?</label><br><br>
+        <div class="di111"><input type="checkbox" id="2_1">40 euros</div><br>
+        <div class="di111"><input type="checkbox" id="2_2">80 euros</div><br>
+        <div class="di111"><input type="checkbox" id="2_3">60 euros<span class="in"> &#10004;</span></div><br><!--vrai-->
+   
+        <label>3- Quel est le carré du quart du tiers de 12 ?</label><br><br>
+        <div class="di111"><input type="checkbox" id="3_1">Neuf</div><br>
+        <div class="di111"><input type="checkbox" id="3_2">Trois</div><br>
+        <div class="di111"><input type="checkbox" id="3_3">Un<span class="in"> &#10004;</span></div><br><!--vrai-->
+
+        <label>4- Une carte routière est à l'échelle 1/250 000. Quelle distance réelle représentent 4 cm sur cette carte ? </label><br><br>
+        <div class="di111"><input type="checkbox" id="4_1">25 km<span class="in"> &#10004;</span></div><br><!--vrai-->
+        <div class="di111"><input type="checkbox" id="4_2">10 km</div><br>
+        <div class="di111"><input type="checkbox" id="4_3">100 km</div><br>
+
+        <label>5- Qui est le plus rapide : un athlète courant le 100 mètres en 10 secondes ou un cycliste roulant à 36 km/h ?</label><br><br>
+        <div class="di111"><input type="checkbox" id="5_1">L'athlète</div><br>
+        <div class="di111"><input type="checkbox" id="5_2">Le cycliste</div><br>
+        <div class="di111"><input type="checkbox" id="5_3">Ils sont aussi rapides l'un que l'autre.<span class="in"> &#10004;</span></div><br><!--vrai-->
+
+        <label>6- L'expression (3x - 1)² + 3(1 - 3x) (x + 2) apour résultat :</label><br><br>
+        <div class="di111"><input type="checkbox" id="6_1">7 - 21x<span class="in"> &#10004;</span></div><br><!--vrai-->
+        <div class="di111"><input type="checkbox" id="6_2">6x + 3</div><br>
+        <div class="di111"><input type="checkbox" id="6_3">x² + 6</div><br>
+  
+        <label>7- Comment calcule-t-on le périmètre d'un cercle de rayon R ?</label><br><br>
+        <div class="di111"><input type="checkbox" id="7_1">2 (3,14 x R)<span class="in"> &#10004;</span></div><br><!--vrai-->
+        <div class="di111"><input type="checkbox" id="7_2">3,14 x R</div><br>
+        <div class="di111"><input type="checkbox" id="7_3">R² x 3,14</div><br>
+
+        <label>8- Le centre de gravité d'un triangle est le point de concours des : </label><br><br>
+        <div class="di111"><input type="checkbox" id="8_1">hauteurs</div><br>
+        <div class="di111"><input type="checkbox" id="8_2">Médiannes<span class="in"> &#10004;</span></div><br><!--vrai-->
+        <div class="di111"><input type="checkbox" id="8_3">Médiatrices</div><br>
+ 
+        <label>9- Une sphère et un cylindre ont tous deux un rayon de 6 cm. Quelle doit être la hauteur du cylindre pour qu'ils aient le même volume ? </label><br><br>
+        <div class="di111"><input type="checkbox" id="9_1">2 cm</div><br>
+        <div class="di111"><input type="checkbox" id="9_2">4 cm</div><br>
+        <div class="di111"><input type="checkbox" id="9_3">8 cm<span class="in"> &#10004;</span></div><br><!--vrai-->
+
+        <label>10- Quand on augmente de 7 m les longueurs des côtés d'un carré, son aire augmente de 511 m². Quelle est la longueur du côté du carré primitif ?</label><br><br>
+        <div class="di111"><input type="checkbox" id="10_1">40 m</div><br>
+        <div class="di111"><input type="checkbox" id="10_2">36.5 m</div><br>
+        <div class="di111"><input type="checkbox" id="10_3">33 m<span class="in"> &#10004;</span></div><br><br><!--vrai-->
+    </form>
+    <div style="text-align: center;margin-bottom: 20px;">
+        <input class="butt" type="button" id="resu" value="Corriger" onClick="resulM();clearInterval(T)">
+        <input class="butt" type="button" value="SHOW" id="sho" onclick="showAns()">
+        <input class="butt" type="button" onclick="show()" value="Correction">
+    </div>
+    <form id="form2" style="display: none;">
+        <p>Votre resultat est :</p>
+        <p id="demo"></p>
+        <p id="ppp">Vous avez fait le QCM dans</p>
+    </form>
+    <a href="index.html" style="text-decoration: none;"><input type="button" value="Retour Au Menu" id="retour" class="butt" style="display: none;"></a>
+    <script>
+        function resulM(){
+            document.getElementById('form2').style.display="block";
+            document.getElementById('resu').style.display="none";
+            document.getElementById('retour').style.display="block";
+            var s=0;
+            if(document.getElementById('1_3').checked==true){s+=1};
+            if(document.getElementById('2_3').checked==true){s+=1};
+            if(document.getElementById('3_3').checked==true){s+=1};
+            if(document.getElementById('4_1').checked==true){s+=1};
+            if(document.getElementById('5_3').checked==true){s+=1};
+            if(document.getElementById('6_1').checked==true){s+=1};
+            if(document.getElementById('7_1').checked==true){s+=1};
+            if(document.getElementById('8_2').checked==true){s+=1};
+            if(document.getElementById('9_3').checked==true){s+=1};
+            if(document.getElementById('10_3').checked==true){s+=1};
+            document.getElementById('demo').innerHTML=s+"/10";
+            document.getElementById('ppp').innerHTML+= ' ' +document.getElementById('i0').value ;
+        }
+        function showAns(){
+            document.getElementById('sho').style.display="none";
+        }
+        function show(){
+            var x=document.querySelectorAll(".in");
+                for(i=0;i<x.length;i++){
+                    x[i].style.display="inline-block";
+                }
+        }
+        var s=0;m=0;
+        function change(){
+            document.getElementById('i0').value=m+' mn '+' '+s+' s ';
+            s++; if(s==60) {s=0;m+=1}
+        }
+    </script>
+    
+</body>
+</html>
